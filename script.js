@@ -1,18 +1,13 @@
 const container = document.getElementById("container");
-const randomButton = document.querySelector('#randColor');
-const blackButton = document.querySelector('#black');
-const eraseButton = document.querySelector('#erase');
 const clearButton = document.querySelector('#clear');
 const changeButton = document.querySelector('#dimensions');
 
 let random = false;
 let color = "black";
-let dimensions = 8;
+let dimensions = 16;
 createGrid(dimensions);
 
-//randomButton.addEventListener('click', randomClick);
-//blackButton.addEventListener('click', blackClick);
-//eraseButton.addEventListener('click', eraseClick);
+
 clearButton.addEventListener('click', clearClick);
 changeButton.addEventListener('click', changeClick);
 
